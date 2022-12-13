@@ -1,0 +1,213 @@
+<meta name="robots" content="noindex">  <!DOCTYPE html>
+  <html>
+  <head>
+    <style type="text/css">*{margin:0;}body,html{height: 100%}.video-js {position: relative !important; width: 100% !important; height: 100% !important; }.vjs-poster {position: absolute !important; left: 0; right: 0; top: 0; bottom: 0; }button.vjs-brand-quality-link {font-family: Tajawal; font-size: 13px; }</style>
+    <link href="https://mycimaaa.click/wp-content/themes/Mycima2021/Style/fonts.css" rel="stylesheet" />
+      <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/videojs-qualityselector@0.0.4/dist/videojs-qualityselector.min.css" rel="stylesheet">
+    <!-- forest -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"rel="stylesheet"/>
+    <style type="text/css">.vjs-theme-forest {
+      --vjs-theme-forest--primary: #5367ff !important;
+      --vjs-theme-forest--secondary: #fff;
+    }.vjs-theme-forest:hover .vjs-big-play-button{
+      background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='88' fill='%235367ff'%3E%3Cpath fill-rule='evenodd' d='M44 88C19.738 88 0 68.262 0 44S19.738 0 44 0s44 19.738 44 44-19.738 44-44 44zm0-85C21.393 3 3 21.393 3 44c0 22.608 18.393 41 41 41s41-18.392 41-41C85 21.393 66.607 3 44 3zm16.063 43.898L39.629 60.741a3.496 3.496 0 01-3.604.194 3.492 3.492 0 01-1.859-3.092V30.158c0-1.299.712-2.483 1.859-3.092a3.487 3.487 0 013.604.194l20.433 13.843a3.497 3.497 0 01.001 5.795zm-1.683-3.311L37.946 29.744a.49.49 0 00-.276-.09.51.51 0 00-.239.062.483.483 0 00-.265.442v27.685c0 .262.166.389.265.442.1.053.299.118.515-.028L58.38 44.414A.489.489 0 0058.6 44a.49.49 0 00-.22-.413z'/%3E%3C/svg%3E");
+    }.video-js .vjs-time-control{font-size: 12px;line-height: 30px;}</style>
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+
+  <body> <video
+      poster="https://mycimaaa.click/wp-content/uploads/2022/11/The-Takeover-2022.png"
+      id="VideoPlayer"
+      class="video-js vjs-theme-forest"
+      data-setup='{ "controls": true, "preload": "true" }'
+    >
+      <source src="https://upbam.org/9e6ynp6fzzvt/The.Takeover.2022.1080p.NF.WEB-DL.MyCima.world.mp4.html?Key=DdWvRVNB2hneLXv1pj7ebg&Expires=1670983222" type="video/mp4">
+    </video>
+    <div class="CanvasScreenshot">
+      <canvas id="canvas" width="640" height="480"></canvas>
+      <div class="CanvasSaver">
+        <p>???? ?????? ???? ????? ?????? ?? ?????? ??? ?????? ?? ??? ?????? ?? Save image</p>
+        <a href="#" onclick="$(this).parent().parent().removeClass('show');$('#VideoPlayer').removeClass('unvisible');player.play();">?????</a>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/videojs-qualityselector@0.0.4/dist/videojs-qualityselector.min.js"></script>
+    <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+    <style type="text/css">
+    div#VideoPlayer {background: black;}
+    div#VideoPlayer.unvisible > * {
+      opacity: .2;
+      pointer-events: none;
+    }
+    .CanvasSaver > p {
+      color: #dfe3ff;
+      display: inline-block;
+      font-size: 17px;
+      margin-left: 14px;
+    }
+    .CanvasScreenshot {
+      position: fixed;
+      top: 50%;
+      z-index: 9999;
+      right: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(50%, -50%);
+      background: transparent;
+      padding: 0;
+      box-sizing: border-box;
+      display: none;
+      font-family: Tajawal;
+    }
+
+    .CanvasScreenshot.show {
+      display: block;
+    }
+    .CanvasScreenshot > canvas {width: 100%;position: relative;top: 50%;transform: translate(0, -50%);}
+
+    .CanvasSaver {
+      text-align: center;
+      direction: rtl;
+      padding: 17px 0;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+    }
+
+    .CanvasSaver a {
+      display: inline-block;
+      text-decoration: none;
+      padding: 9px 17px;
+      background: #9c2626;
+      border-radius: 3px;
+      margin: 4px 6px;
+      color: #ffe5e5;
+    }
+
+    .CanvasSaver a.SaveImage {
+      background: #4e87f1;
+      color: white;
+    }
+    button svg path {
+      fill: white;
+    }
+
+    button svg {
+      width: 50px;
+      height: 40px;
+      margin-top: -6px;
+      cursor: pointer;
+    }
+    </style>
+    <script>
+      whereYouAt = 0;
+      var player = videojs('VideoPlayer');
+      var added = false;
+      var IntvalSnap = setInterval(function(){
+        if( added == false ) {
+          $('.video-js .vjs-play-control').after('<button style="padding: 0px 7px 0 0" onclick="skip(1000000)"><svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" id="Layer_1" enable-background="new 0 0 511.449 511.449" height="512" viewBox="0 0 511.449 511.449" width="512"><path d="m436.508 74.941c-99.913-99.913-261.639-99.928-361.566 0-99.914 99.912-99.93 261.64 0 361.567 99.913 99.913 261.639 99.928 361.566 0 99.913-99.912 99.929-261.64 0-361.567zm-180.784 394.45c-117.816 0-213.667-95.851-213.667-213.667s95.851-213.666 213.667-213.666 213.667 95.851 213.667 213.667-95.85 213.666-213.667 213.666z"/><path d="m349.094 143.472-83.036 67.938v-51.685c0-17.691-20.615-27.448-34.298-16.253l-117.333 96c-10.231 8.37-10.3 24.079 0 32.506l117.333 96c13.592 11.122 34.298 1.51 34.298-16.253v-51.685l83.036 67.938c13.678 11.192 34.298 1.442 34.298-16.253v-192c-.001-17.691-20.615-27.448-34.298-16.253zm-125.037 163.938-63.17-51.685 63.17-51.685zm117.334 0-63.171-51.685 63.171-51.685z"/></svg></button>'+
+            '<button style="padding: 0px;" onclick="skip()"><svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 426.667 426.667" style="enable-background:new 0 0 426.667 426.667;" xml:space="preserve"> <g> <g> <path d="M213.333,0C95.513,0,0,95.513,0,213.333s95.513,213.333,213.333,213.333s213.333-95.513,213.333-213.333    S331.154,0,213.333,0z M213.333,388.053c-96.495,0-174.72-78.225-174.72-174.72s78.225-174.72,174.72-174.72    c96.446,0.117,174.602,78.273,174.72,174.72C388.053,309.829,309.829,388.053,213.333,388.053z"/> </g> </g> <g> <g> <path d="M355.627,213.333L213.333,106.667v80l-106.667-80V320l106.667-80v80L355.627,213.333z M253.013,185.813h0.213l36.48,27.52    l-36.693,27.52V185.813z M146.56,242.773v-58.667l39.04,29.227L146.56,242.773z"/> </g> </g> </svg></button>');
+          added = true;
+        }else {
+          clearInterval(IntvalSnap);
+        }
+      },300);
+       function skip(type) {
+        if( type == 1000000 ) {
+          player.currentTime(player.currentTime() - 10);
+        }else {
+          player.currentTime(player.currentTime() + 10);
+        }
+       }    
+
+      var Intval = setInterval(function(){
+        if( $('.vjs-brand-quality-link').text() != '??????' ) {
+          $('.vjs-brand-quality-link').text('??????');
+        }else {
+          clearInterval(Intval);
+        }
+      },300);
+      player.on("play", function (e) {
+        if( whereYouAt > 0 ) {
+          player.currentTime(whereYouAt);
+          whereYouAt = 0;
+        }
+      });
+      player.on('ended', function(){
+        if (document.exitFullscreen) {
+            document.exitFullscreen(); // Standard
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen(); // Blink
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen(); // Gecko
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen(); // Old IE
+        }
+      });
+      var video=document.querySelector('video');
+      var canvas=document.querySelector('canvas');
+      var context=canvas.getContext('2d');
+      var w,h,ratio;
+
+      //add loadedmetadata which will helps to identify video attributes
+
+      video.addEventListener('loadedmetadata', function() {
+        ratio = video.videoWidth/video.videoHeight;
+        w = video.videoWidth-100;
+        h = parseInt(w/ratio,10);
+        canvas.width = w;
+        canvas.height = h;
+      },false);
+      function snap() {
+        context.fillRect(0,0,w,h);
+        context.drawImage(video,0,0,w,h);
+        $('#VideoPlayer').addClass('unvisible');
+        player.pause();
+        $('.CanvasScreenshot').addClass('show');
+        if (document.exitFullscreen) {
+            document.exitFullscreen(); // Standard
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen(); // Blink
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen(); // Gecko
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen(); // Old IE
+        }
+      }
+          player.qualityselector({
+        sources: [
+          { format: 'auto', src: "https://mycimaa.tube/run/43c1eb4be1781de5ff9c5e08a059eb4ad2a27ef9920f06a114cd99eff3239c65d40f921f6df51ea712d14243cc099e341706141f7d9995727b08075b616bc5bf14f97a827e549c4d1c82cfb97adf9098cad226be9a2aedb9d48af1e4bebb5aa2504873/?Key=uvgk12bFpZD2eviCLYLyWQ&Expires=1670981265&auto=true", type: 'video/mp4'},
+                            { format: '1080p WEB-DL', src: "https://upbam.org/9e6ynp6fzzvt/The.Takeover.2022.1080p.NF.WEB-DL.MyCima.world.mp4.html?Key=DdWvRVNB2hneLXv1pj7ebg&Expires=1670983222", type: 'video/mp4'},
+                                  { format: '720p WEB-DL', src: "https://upbam.org/l2znfsuxggnk/The.Takeover.2022.720p.NF.WEB-DL.MyCima.world.mp4.html?Key=DdWvRVNB2hneLXv1pj7ebg&Expires=1670983222", type: 'video/mp4'},
+                                  { format: '480p WEB-DL', src: "https://upbam.org/8xhr3yrai5si/The.Takeover.2022.480p.NF.WEB-DL.MyCima.world.mp4.html?Key=DdWvRVNB2hneLXv1pj7ebg&Expires=1670983222", type: 'video/mp4'},
+                                  { format: '360p WEB-DL', src: "https://upbam.org/x7svavf41ftm/The.Takeover.2022.360p.NF.WEB-DL.MyCima.world.mp4.html?Key=DdWvRVNB2hneLXv1pj7ebg&Expires=1670983222", type: 'video/mp4'},
+                                  { format: '240p WEB-DL', src: "https://upbam.org/q4wsesvj18oy/The.Takeover.2022.240p.NF.WEB-DL.MyCima.world.mp4.html?Key=DdWvRVNB2hneLXv1pj7ebg&Expires=1670983222", type: 'video/mp4'},
+                        ],
+        formats: [
+          { code: 'auto', name: '??????' },
+                            { code: '1080p WEB-DL', name: '1080p' },
+                                  { code: '720p WEB-DL', name: '720p' },
+                                  { code: '480p WEB-DL', name: '480p' },
+                                  { code: '360p WEB-DL', name: '360p' },
+                                  { code: '240p WEB-DL', name: '240p' },
+                        ],
+
+        onFormatSelected: function(format) {
+          whereYouAt = player.currentTime();
+          setTimeout(function(){
+            $('#VideoPlayer').attr("class", 'video-js vjs-has-started vjs-waiting vjs-theme-forest');
+          },100);
+        }
+      });
+       </script>
+      <style type="text/css">
+    * {
+      outline: 0;
+    }
+   </style>
